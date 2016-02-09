@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="page-header">
+    <h1><%= @song.title %></h1>
+  </div>
+
+  <article class="song col-sm-8">
+    <p>highest chart rating: <%= @song.highest_chart_rating %></p>
+  </article>
+
+  <aside class="col-sm-2">
+    <%= render @song.artist %>
+  </aside>
+</div>
