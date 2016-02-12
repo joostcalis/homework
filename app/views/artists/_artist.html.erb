@@ -3,7 +3,7 @@
     <%= artist.first_name %>
     <%= artist.last_name %>
     <%= artist.birth_date %>
-    <%= image_tag artist.artistphoto %>
+    <%= image_tag artist.artistphoto.thumb %>
     <%= link_to "Go to artist's page", artist, class: "btn btn-primary", role: "button" %>
 
   </h3>

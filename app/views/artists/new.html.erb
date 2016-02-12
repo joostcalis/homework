@@ -1,8 +1,8 @@
-<body class="newartist">
+
   <div class="artistform">
     <h4>New Artist</h4>
 
-<%= form_for(@artist) do |f| %>
+<%= form_for @artist do |f| %>
 
 <div>
   <p><%= f.label :first_name %></p>
@@ -21,8 +21,7 @@
   <%= f.file_field :artistphoto %>
 </div>
 <div>
-  <%= f.submit "Save post!" %>
+  <%= f.submit "Save artist!" %>
+  <% end %>
 </div>
-<% end %>
 </div>
-</>
