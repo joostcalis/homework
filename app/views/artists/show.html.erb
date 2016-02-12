@@ -1,0 +1,21 @@
+<div class="artist">
+  <h3>
+    <%= @artist.first_name %>
+    <%= @artist.last_name %>
+    <%= @artist.birth_date %>
+    <%= image_tag @artist.artistphoto.thumb %>
+  </h3>
+</div>
+  <h3> songs: </h3>
+
+      <% @artist.songs.each do |song| %>
+
+<div class="table">
+	<div class="row">
+		<div class="col-md-8 l-main">
+			<h2><%= link_to song.title, song %></h2>
+		</div>
+	</div>
+</div>
+
+<% end %>
